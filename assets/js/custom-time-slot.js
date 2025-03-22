@@ -44,12 +44,3 @@ function showTimeSlots() {
         timeSlotsContainer.innerHTML = 'No time slots available for this day.';
     }
 }
-
-
-
-let newBtns = document.querySelectorAll(".wc-block-components-button");
-
-newBtns.forEach(button => {
-    button.textContent = "New Button Text"; 
-});
-     
