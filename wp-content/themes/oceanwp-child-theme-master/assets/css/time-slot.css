@@ -1,0 +1,124 @@
+
+
+/* --- Date Input Field Styling --- */
+#product_date {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Focus state of the date input */
+#product_date:focus {
+    background-color: #e4f0ff;
+    border-color: #071c38; 
+    outline: none;
+}
+
+/* Hover state of the date input */
+#product_date:hover {
+    background-color: #e4f0ff;
+    border-color: #071c38;
+}
+
+/* --- Flatpickr Calendar Styling --- */
+.flatpickr-calendar {
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.flatpickr-day {
+    background-color: #3f7ccc; /* Same color as the input */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change background on hover */
+.flatpickr-day:hover {
+    background-color: #81ade7;
+}
+
+/* Style the selected day */
+.flatpickr-day.selected {
+    background-color: #071c38;
+    color: white;
+}
+
+/* Styling for today’s date */
+.flatpickr-day.today {
+    background-color: #071c38;
+    color: white;
+}
+
+/* --- Location Dropdown Styling --- */
+#product_location {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    background-color: #ffffff;
+}
+
+/* Focus state of the location dropdown */
+#product_location:focus {
+    background-color: #e4f0ff;
+    border-color: #071c38;
+}
+
+/* Hover state of the location dropdown */
+#product_location:hover {
+    background-color: #e4f0ff;
+}
+
+/* --- Location Dropdown Option Styling --- */
+#product_location option {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px; 
+}
+
+/* --- Container and Label Styling --- */
+.select-container {
+    margin-top: 20px; 
+}
+
+
+
+#product_location_wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tooltip style */
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: none;
+  z-index: 10;
+}
+
+/* Tooltip arrow */
+.tooltip::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #333;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
